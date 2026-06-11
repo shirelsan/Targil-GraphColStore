@@ -12,8 +12,9 @@
 
 ## שורות תוצאה נדרשות
 * **משימה A1 (מספר אירועים כולל):** 28,506,909
-* **משימה A2 (תדירות סוגי אירועים):** :
-* The query output 14 items, which is too many to display. Displaying the first 10 items:
+* **משימה A2 (תדירות סוגי אירועים):**
+```text
+The query output 14 items, which is too many to display. Displaying the first 10 items:
 {
   "type": "PushEvent",
   "count": 14271557
@@ -54,8 +55,11 @@
   "type": "GollumEvent",
   "count": 294042
 }
+
+
 הערה: הפלט קוצץ ל-10 התוצאות הראשונות על ידי מנגנון ברירת המחדל של RumbleDB.
 
+```
 * **משימה A4 (מספר רשומות עם commits):** [להשלים פלט]
 * **משימה B4 (אימות פלט Parquet):** * גודל קובץ מקורי (`.json.gz`): [להשלים] MB
   * גודל קובץ מומר (`events.parquet`): [להשלים] MB
