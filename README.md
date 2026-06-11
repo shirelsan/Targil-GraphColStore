@@ -89,7 +89,9 @@ The query output 14 items, which is too many to display. Displaying the first 10
 }
 ```
 
-* **משימה A4 (מספר רשומות עם commits):**
+* **משימה A4 (מספר רשומות עם commits):** 14,173,075 רשומות.
+  * *השוואה ל-A2:* מתוך 14,271,557 אירועי PushEvent סך הכל, 14,173,075 מכילים קומיטים שאינם ריקים. ישנם 98,482 אירועי Push ללא קומיטים (כ-0.7% מכלל אירועי ה-Push).
+    
 * **משימה B4 (אימות פלט Parquet):** * גודל קובץ מקורי (`.json.gz`): [להשלים] MB
   * גודל קובץ מומר (`events.parquet`): [להשלים] MB
   * יחס המרה: [להשלים]
@@ -105,7 +107,7 @@ The query output 14 items, which is too many to display. Displaying the first 10
 | A1 - total event count | 28m 50.0s (1730s) |
 | A2 - event type frequencies | 135m 30.0s (8130s) |
 | A3 - first 5 PushEvents | 3.9s |
-| A4 - non-empty commits count | [להשלים] |
+| A4 - non-empty commits count | 65m 42.7s (3942.7s) |
 | A5 - timestamp range | [להשלים] |
 
 ### חלק ב' - המרה לעמודות (Parquet)
