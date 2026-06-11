@@ -60,7 +60,36 @@ The query output 14 items, which is too many to display. Displaying the first 10
 הערה: הפלט קוצץ ל-10 התוצאות הראשונות על ידי מנגנון ברירת המחדל של RumbleDB.
 
 ```
-* **משימה A4 (מספר רשומות עם commits):** [להשלים פלט]
+* **משימה A3 (חמשת ה-PushEvents הראשונים):**
+* ```text
+{
+  "actor_login": "davidcarlsonberg",
+  "repo_name": "PubWlkr/PubWlkr",
+  "created_at": "2015-02-20T01:00:01Z"
+}
+{
+  "actor_login": "loomchild",
+  "repo_name": "loomchild/reload",
+  "created_at": "2015-02-20T01:00:01Z"
+}
+{
+  "actor_login": "lsqshr",
+  "repo_name": "lsqshr/nipype",
+  "created_at": "2015-02-20T01:00:01Z"
+}
+{
+  "actor_login": "PhancyCat",
+  "repo_name": "PhancyCat/HTMLClock",
+  "created_at": "2015-02-20T01:00:01Z"
+}
+{
+  "actor_login": "saramartinez",
+  "repo_name": "saramartinez/tv-or-not-tv",
+  "created_at": "2015-02-20T01:00:01Z"
+}
+```
+
+* **משימה A4 (מספר רשומות עם commits):**
 * **משימה B4 (אימות פלט Parquet):** * גודל קובץ מקורי (`.json.gz`): [להשלים] MB
   * גודל קובץ מומר (`events.parquet`): [להשלים] MB
   * יחס המרה: [להשלים]
@@ -75,7 +104,7 @@ The query output 14 items, which is too many to display. Displaying the first 10
 | :--- | :--- |
 | A1 - total event count | 28m 50.0s (1730s) |
 | A2 - event type frequencies | 135m 30.0s (8130s) |
-| A3 - first 5 PushEvents | [להשלים] |
+| A3 - first 5 PushEvents | 3.9s |
 | A4 - non-empty commits count | [להשלים] |
 | A5 - timestamp range | [להשלים] |
 
