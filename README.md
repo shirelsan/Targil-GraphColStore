@@ -61,7 +61,7 @@ The query output 14 items, which is too many to display. Displaying the first 10
 
 ```
 * **משימה A3 (חמשת ה-PushEvents הראשונים):**
-* ```text
+```text
 {
   "actor_login": "davidcarlsonberg",
   "repo_name": "PubWlkr/PubWlkr",
