@@ -1,0 +1,50 @@
+# GitHub Archive Analysis - GraphColStore
+
+## חברי הקבוצה
+* שיראל סננס (ת.ז: [322328824)
+* תהילה בן דוד (ת.ז: [להשלים])
+
+## הוראות הפעלה
+כדי להריץ את הפרויקט במלואו, יש להריץ את המחברות הבאות לפי הסדר בסביבת WSL:
+1. `01_explore.ipynb` - תחקור נתונים גולמיים בעזרת שאילתות JSONiq.
+2. `02_to_parquet.ipynb` - שיטוח הנתונים והמרתם למאגר עמודות (Parquet).
+3. `03_analysis.ipynb` - חישובים, אגרגציות ויצירת גרפים.
+
+## שורות תוצאה נדרשות
+* **משימה A1 (מספר אירועים כולל):** [יושלם ברגע שההרצה תסתיים]
+* **משימה A2 (תדירות סוגי אירועים):** [להשלים פלט של השאילתה]
+* **משימה A4 (מספר רשומות עם commits):** [להשלים פלט]
+* **משימה B4 (אימות פלט Parquet):** * גודל קובץ מקורי (`.json.gz`): [להשלים] MB
+  * גודל קובץ מומר (`events.parquet`): [להשלים] MB
+  * יחס המרה: [להשלים]
+  * שטח זיכרון בשימוש ה-DataFrame: [להשלים] MB
+
+---
+
+## טבלאות תזמון
+
+### חלק א' - תחקור מידע (JSONiq)
+| Query | Wall-clock time (s) |
+| :--- | :--- |
+| A1 - total event count | [להשלים] |
+| A2 - event type frequencies | [להשלים] |
+| A3 - first 5 PushEvents | [להשלים] |
+| A4 - non-empty commits count | [להשלים] |
+| A5 - timestamp range | [להשלים] |
+
+### חלק ב' - המרה לעמודות (Parquet)
+| Step | Wall-clock time (s) | Throughput (rows/s) |
+| :--- | :--- | :--- |
+| B3 - full JSON → Parquet conversion | [להשלים] | [להשלים] |
+| B4 - reload Parquet into DataFrame | [להשלים] | N/A |
+
+### חלק ג' - חישובים (Pandas)
+| Step | Wall-clock time (s) |
+| :--- | :--- |
+| Parquet load + timestamp parse | [להשלים] |
+| C1 - top users by event count | [להשלים] |
+| C1 - top users by commit count | [להשלים] |
+| C2 - top repos by event count | [להשלים] |
+| C2 - top repos by commit count | [להשלים] |
+| C3 - hourly aggregation | [להשלים] |
+| C3 - day-of-week aggregation | [להשלים] |
