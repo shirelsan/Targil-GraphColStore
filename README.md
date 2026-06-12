@@ -2,16 +2,17 @@
 
 ## חברי הקבוצה
 * שיראל סננס (ת.ז:322328824)
-* תהילה בן דוד (ת.ז: [להשלים])
+* תהילה בן דוד (ת.ז: 314692195)
 
 ## הוראות הפעלה
-כדי להריץ את הפרויקט במלואו, יש להריץ את המחברות הבאות לפי הסדר בסביבת WSL:
+כדי להריץ את הפרויקט במלואו, יש להריץ את המחברות הבאות לפי הסדר:
 1. `01_explore.ipynb` - תחקור נתונים גולמיים בעזרת שאילתות JSONiq.
 2. `02_to_parquet.ipynb` - שיטוח הנתונים והמרתם למאגר עמודות (Parquet).
 3. `03_analysis.ipynb` - חישובים, אגרגציות ויצירת גרפים.
 
 ## שורות תוצאה נדרשות
 * **משימה A1 (מספר אירועים כולל):** 28,506,909
+<<<<<<< HEAD
 * **משימה A2 (תדירות סוגי אירועים):**
 ```text
 The query output 14 items, which is too many to display. Displaying the first 10 items:
@@ -158,6 +159,15 @@ The query output 14 items, which is too many to display. Displaying the first 10
   * גודל קובץ מומר (`events.parquet`): [להשלים] MB
   * יחס המרה: [להשלים]
   * שטח זיכרון בשימוש ה-DataFrame: [להשלים] MB
+=======
+* **משימה A2 (תדירות סוגי אירועים):** [להשלים פלט של השאילתה]
+* **משימה A4 (מספר רשומות עם commits):** [להשלים פלט]
+* **משימה B4 (אימות פלט Parquet):**
+  * גודל קובץ מקורי (`.json.gz`): 10180.67 MB
+  * גודל קובץ מומר (`events.parquet`): 746.15 MB
+  * יחס המרה: 0.073
+  * שטח זיכרון בשימוש ה-DataFrame: 0.06 MB
+>>>>>>> 5d61aa9 (stage2)
 
 ---
 
@@ -175,8 +185,8 @@ The query output 14 items, which is too many to display. Displaying the first 10
 ### חלק ב' - המרה לעמודות (Parquet)
 | Step | Wall-clock time (s) | Throughput (rows/s) |
 | :--- | :--- | :--- |
-| B3 - full JSON → Parquet conversion | [להשלים] | [להשלים] |
-| B4 - reload Parquet into DataFrame | [להשלים] | N/A |
+| B3 - full JSON → Parquet conversion | 6751.00 | 4222.62 |
+| B4 - reload Parquet into DataFrame | 63.10 | N/A |
 
 ### חלק ג' - חישובים (Pandas)
 | Step | Wall-clock time (s) |
