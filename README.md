@@ -153,12 +153,33 @@ The query output 14 items, which is too many to display. Displaying the first 10
   }
 }
 ```
+* **משימה B1 (הגדרת Schema):**
+```text
+event_id: string
+event_type: dictionary<values=string, indices=int8, ordered=0>
+actor_login: string
+repo_name: string
+created_at: timestamp[us, tz=UTC]
+commit_count: int32
+```
 
+* **משימה B2 (בדיקת flatten_event):**
+```python
+{
+  'actor_login': 'davidcarlsonberg',
+  'commit_count': 1,
+  'created_at': '2015-02-20T01:00:01Z',
+  'event_id': '2594237222',
+  'event_type': 'PushEvent',
+  'repo_name': 'PubWlkr/PubWlkr'
+}
+```
 
-* **משימה B4 (אימות פלט Parquet):** * גודל קובץ מקורי (`.json.gz`): [להשלים] MB
-  * גודל קובץ מומר (`events.parquet`): [להשלים] MB
-  * יחס המרה: [להשלים]
-  * שטח זיכרון בשימוש ה-DataFrame: [להשלים] MB
+* **משימה B4 (אימות פלט Parquet):**
+  * גודל קובץ מקורי (`.json.gz`): 10180.67 MB
+  * גודל קובץ מומר (`events.parquet`): 746.15 MB
+  * יחס המרה: 0.073
+  * שטח זיכרון בשימוש ה-DataFrame: 0.06 MB
 =======
 * **משימה A2 (תדירות סוגי אירועים):** [להשלים פלט של השאילתה]
 * **משימה A4 (מספר רשומות עם commits):** [להשלים פלט]
