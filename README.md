@@ -91,7 +91,68 @@ The query output 14 items, which is too many to display. Displaying the first 10
 
 * **משימה A4 (מספר רשומות עם commits):** 14,173,075 רשומות.
   * *השוואה ל-A2:* מתוך 14,271,557 אירועי PushEvent סך הכל, 14,173,075 מכילים קומיטים שאינם ריקים. ישנם 98,482 אירועי Push ללא קומיטים (כ-0.7% מכלל אירועי ה-Push).
-    
+* **משימה A5 (טווח חותמות הזמן):**
+  ```json
+{
+  "IssueCommentEvent": {
+    "earliest": "2015-01-01T00:00:06Z",
+    "latest": "2015-02-28T23:59:59Z"
+  },
+  "CreateEvent": {
+    "earliest": "2015-01-01T00:00:01Z",
+    "latest": "2015-02-28T23:59:59Z"
+  },
+  "WatchEvent": {
+    "earliest": "2015-01-01T00:00:18Z",
+    "latest": "2015-02-28T23:59:58Z"
+  },
+  "IssuesEvent": {
+    "earliest": "2015-01-01T00:00:30Z",
+    "latest": "2015-02-28T23:59:59Z"
+  },
+  "PublicEvent": {
+    "earliest": "2015-01-01T00:09:13Z",
+    "latest": "2015-02-28T23:57:28Z"
+  },
+  "PullRequestReviewCommentEvent": {
+    "earliest": "2015-01-01T00:00:08Z",
+    "latest": "2015-02-28T23:59:26Z"
+  },
+  "ForkEvent": {
+    "earliest": "2015-01-01T00:00:16Z",
+    "latest": "2015-02-28T23:59:34Z"
+  },
+  "ReleaseEvent": {
+    "earliest": "2015-01-01T00:02:19Z",
+    "latest": "2015-02-28T23:59:06Z"
+  },
+  "GollumEvent": {
+    "earliest": "2015-01-01T00:01:10Z",
+    "latest": "2015-02-28T23:59:44Z"
+  },
+  "DeleteEvent": {
+    "earliest": "2015-01-01T00:00:30Z",
+    "latest": "2015-02-28T23:59:46Z"
+  },
+  "MemberEvent": {
+    "earliest": "2015-01-01T00:04:11Z",
+    "latest": "2015-02-28T23:58:56Z"
+  },
+  "PullRequestEvent": {
+    "earliest": "2015-01-01T00:00:11Z",
+    "latest": "2015-02-28T23:59:58Z"
+  },
+  "CommitCommentEvent": {
+    "earliest": "2015-01-01T00:00:55Z",
+    "latest": "2015-02-28T23:58:56Z"
+  },
+  "PushEvent": {
+    "earliest": "2015-01-01T00:00:00Z",
+    "latest": "2015-02-28T23:59:59Z"
+  }
+}
+```
+
 * **משימה B4 (אימות פלט Parquet):** * גודל קובץ מקורי (`.json.gz`): [להשלים] MB
   * גודל קובץ מומר (`events.parquet`): [להשלים] MB
   * יחס המרה: [להשלים]
