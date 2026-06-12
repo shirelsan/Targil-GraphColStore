@@ -150,8 +150,8 @@ The query output 14 items, which is too many to display. Displaying the first 10
     "earliest": "2015-01-01T00:00:00Z",
     "latest": "2015-02-28T23:59:59Z"
   }
-}
-```
+} ```
+
 
 * **משימה B4 (אימות פלט Parquet):** * גודל קובץ מקורי (`.json.gz`): [להשלים] MB
   * גודל קובץ מומר (`events.parquet`): [להשלים] MB
@@ -169,7 +169,7 @@ The query output 14 items, which is too many to display. Displaying the first 10
 | A2 - event type frequencies | 135m 30.0s (8130s) |
 | A3 - first 5 PushEvents | 3.9s |
 | A4 - non-empty commits count | 65m 42.7s (3942.7s) |
-| A5 - timestamp range | [להשלים] |
+| A5 - timestamp range | 69m 15.6s (4155.6s) |
 
 ### חלק ב' - המרה לעמודות (Parquet)
 | Step | Wall-clock time (s) | Throughput (rows/s) |
