@@ -92,7 +92,7 @@ The query output 14 items, which is too many to display. Displaying the first 10
 * **משימה A4 (מספר רשומות עם commits):** 14,173,075 רשומות.
   * *השוואה ל-A2:* מתוך 14,271,557 אירועי PushEvent סך הכל, 14,173,075 מכילים קומיטים שאינם ריקים. ישנם 98,482 אירועי Push ללא קומיטים (כ-0.7% מכלל אירועי ה-Push).
 * **משימה A5 (טווח חותמות הזמן):**
-  ```json
+```json
 {
   "IssueCommentEvent": {
     "earliest": "2015-01-01T00:00:06Z",
@@ -150,7 +150,8 @@ The query output 14 items, which is too many to display. Displaying the first 10
     "earliest": "2015-01-01T00:00:00Z",
     "latest": "2015-02-28T23:59:59Z"
   }
-} ```
+}
+```
 
 
 * **משימה B4 (אימות פלט Parquet):** * גודל קובץ מקורי (`.json.gz`): [להשלים] MB
